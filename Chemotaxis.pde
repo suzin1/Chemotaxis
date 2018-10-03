@@ -31,6 +31,6 @@ Bacteria [] bob;
   void show(){
     fill(84,214,165);
     stroke(73,196,150);
-    ellipse((int)(Math.random()*500),(int)(Math.random()*500),8,8);
+    ellipse(myX+(int)(Math.random()*500),myY+(int)(Math.random()*500),8,8);
   }
  }    
