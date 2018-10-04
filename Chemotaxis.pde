@@ -4,7 +4,7 @@ Bacteria [] bob;
  {     
  	//initialize bacteria variables here   
   size(500,500);
-  //frameRate(8);
+  //frameRate(1);
   bob = new Bacteria[150];
   for (int i = 0;i<bob.length; i++){
     bob[i] = new Bacteria();
@@ -31,8 +31,7 @@ Bacteria [] bob;
     myY = myY +(int)(Math.random()*5)-3;
     }
   void show(){
-    fill(84,214,165);
-    stroke(73,196,150);
+    fill(0,225,0,200);
     //ellipse((int)(Math.random()*500),(int)(Math.random()*500),8,8);
     ellipse(myX+(int)(Math.random()*700),myY+(int)(Math.random()*700),8,8);
   }
