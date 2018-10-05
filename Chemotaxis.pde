@@ -8,7 +8,6 @@ Bacteria [] bob;
   bob = new Bacteria[150];
   for (int i = 0;i<bob.length; i++){
     bob[i] = new Bacteria();
-    
   }
  }   
  void draw()   
@@ -19,20 +18,25 @@ Bacteria [] bob;
   bob[i].show();
   bob[i].bact();
   }
- }  
+ } 
  class Bacteria    
  {     
  	 int myX,myY;
   Bacteria(){
-    myX = myY =0;
+    myX =(int)(Math.random()*700);
+    myY = (int)(Math.random()*700);
   }
   void bact(){
     myX = myX +(int)(Math.random()*7)-3;
     myY = myY +(int)(Math.random()*5)-3;
     }
   void show(){
-    fill(0,225,0,200);
+    fill(0,225,0,127);
     //ellipse((int)(Math.random()*500),(int)(Math.random()*500),8,8);
-    ellipse(myX+(int)(Math.random()*700),myY+(int)(Math.random()*700),8,8);
-  }
- }    
+    //ellipse(myX+(int)(Math.random()*700),myY+(int)(Math.random()*700),8,8);
+    ellipse(myX,myY,8,8);
+    }
+ }  
+  void mousePressed(){
+   redraw();
+ }
